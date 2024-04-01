@@ -1,0 +1,140 @@
+.header{
+  height: 55px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid rgb(215, 213, 213);
+  z-index: 100;
+}
+.leftsec{
+  display: flex;
+  align-items: center;
+}
+.midsec{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search{
+  height: 41px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(194, 194, 194);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.search,.voice,.uploadiconcontainer,.ytapps,.notif-icon-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.search .tooltip,.voice .tooltip, .uploadiconcontainer .tooltip,.ytapps .tooltip,.notif-icon-container .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: 'Roboto', 'Arial';
+}
+.search:hover .tooltip, .voice:hover .tooltip, .uploadiconcontainer:hover .tooltip,.ytapps:hover .tooltip,
+.notif-icon-container:hover .tooltip{
+  opacity: 1;
+}
+.voice{
+  height: 40px;
+  width: 40px;
+}
+.rightsec{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+.logo{
+  height: 20px;
+}
+#box1{
+  flex: 1;
+  height: 37px;
+  font-size: 16px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  width: 0px;
+}
+#box1::placeholder{
+  font-family: 'Roboto', 'Arial';
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.searchicon{
+  height: 25px;
+  cursor: pointer;
+}
+.voice{
+  border-radius: 35px;
+  background-color: rgb(249, 248, 248);
+  border: 1px solid rgb(249, 248, 248);
+  height: 40px;
+  width: 40px;
+}
+.vcicon{
+  padding: 2px;
+  height: 24px;
+}
+.upload{
+  height: 24px;
+}
+.apps{
+  height: 24px;
+}
+.notificon{
+  height: 24px;
+}
+.notif-icon-container{
+  position: relative;
+}
+.notif-count{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  color: white;
+  background-color: rgb(200,0,0);
+  font-family: 'Roboto','Arial';
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+.current-user{
+  height: 32px;
+  border-radius: 16px;
+}
